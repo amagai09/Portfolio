@@ -1,0 +1,128 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 5px;
+    padding-top: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: ivory;
+}
+
+nav{
+    position: fixed;
+    background: grey;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+}
+nav a{
+    color:white;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+div.top{
+    background: url("../img/sample.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.top div.title{
+    position: absolute;
+    width: 100%;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ivory; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+}
+
+.icon{
+    background-image: url("../img/icon.JPG");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    height: 200px;
+    width:200px;
+    margin: auto;
+}
+
+div.content{
+    background: url("../img/traffic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 70%;
+    position: relative;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+div.content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content div.text{
+    /* top: 0;
+    left: 0; */
+    padding: 40px;
+    color:cornsilk; 
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    text-align: left;
+    
+}
+h1{
+    padding-top: 60px;
+    font-size: 50px;
+}
+h2{
+    padding-top: 20px;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+content{
+    text-align: center; 
+}
+footer{
+    height: 30px;
+    width: 100%;
+    background-color: grey ;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+}
+
+#cover1.selecting,#cover2.selecting,#cover3.selecting,#cover4.selecting{
+    background-color: #000;
+    opacity: 0.6;
+    width: 200px;
+    top: 0;
+    display: block;
+    z-index: 100000;
+}

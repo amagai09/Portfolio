@@ -7,6 +7,7 @@ body{
     padding-top: 45px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: ivory;
+    text-align: center; 
 }
 
 nav{
@@ -28,9 +29,10 @@ nav a{
     padding: 10px;
     width: 200px;
     text-align: center;
+    overflow: hidden;
 }
 
-div.top{
+div.TopImage{
     background: url("../img/sample.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,8 +40,7 @@ div.top{
     width: 100%;
     position: relative;
 }
-
-.top div.title{
+.TopImage div.TopText{
     position: absolute;
     width: 100%;
     font-size: 50px;
@@ -49,17 +50,20 @@ div.top{
     text-align: center; 
 }
 
-.icon{
+.IconImage{
     background-image: url("../img/icon.JPG");
     background-size: cover;
     background-position: 50%;
     border-radius: 50%;
-    height: 200px;
-    width:200px;
+    height: 300px;
+    width:300px;
     margin: auto;
 }
+.Icon{
+    padding-top: 50px;
+}
 
-div.content{
+div.Content{
     background: url("../img/traffic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +74,7 @@ div.content{
     margin: auto;
 }
 
-div.content::before{
+div.Content:before{
     content: '';
     position: absolute;
     top: 0;
@@ -80,9 +84,7 @@ div.content::before{
     background-color: rgba(0,0,0,0.5);
 }
 
-.content div.text{
-    /* top: 0;
-    left: 0; */
+.Content div.ContentText{
     padding: 40px;
     color:cornsilk; 
     font-size: 25px;
@@ -92,37 +94,32 @@ div.content::before{
     
 }
 h1{
-    padding-top: 60px;
+    padding-top: 100px;
     font-size: 50px;
 }
 h2{
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 30px;
 }
 p{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
 }
 
-
-content{
-    text-align: center; 
-}
 footer{
     height: 30px;
     width: 100%;
+    font-size: 20px;
     background-color: grey ;
+    color: white;
     text-align: center;
     vertical-align: middle;
-    color: white;
-    font-size: 20px;
 }
 
-#cover1.selecting,#cover2.selecting,#cover3.selecting,#cover4.selecting{
+#cover1.Selecting,#cover2.Selecting,#cover3.Selecting,#cover4.Selecting{
     background-color: #000;
-    opacity: 0.6;
+    opacity: 0.7;
     width: 200px;
     top: 0;
-    display: block;
-    z-index: 100000;
+    z-index: 1;
 }
